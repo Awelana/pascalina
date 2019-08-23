@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pascalina - DIV Assignment</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<img src="SideShow.images" width="400px" height="300px">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">About</a>
+  <a href="#">Career</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <ul>
+    <li>I am passionate about using technology to revolutionize Africa and beyond</li><br>
+    <li>I am a part of the tech ecosystem for women</li><br>
+    <li>I am a part of a vibrant network of young women innovators</li><br>
+    <li>I am on a path of great exploits in my career</li><br>
+    <li>I am exposed to an awesome world of possiblitites</li><br>
+    </ul>
+  </div>
+  <div class="main">
+    <h2>WELCOME TO MY WEBSITE</h2>
+    <h5>PASCALINA</h5>
+    <p>Here's a Video </p>
+        <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        </video>
+    <br>
+    <h2>DEVELOPERS IN VOGUE</h2>
+    <h5>AMAZING GENERATION OF WOMEN IN TECHNOLOGY</h5>
+    <img src="ivy-barley.jpeg" width="400px" height="300px">
+    <h5>WHAT WE DO</h5>
+    <p>Developers in Vogue aims at creating a relevant community of amazing African women who are passionate about using technology to revolutionize Africa and beyond.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Copyright &copy  2019 | Pascalina</h2>
+</div>
+
+</body>
+</html>
